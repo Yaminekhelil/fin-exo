@@ -35,8 +35,6 @@ fruits.forEach((fruit) => {
     div.addEventListener("click", () => {
         fruitClicked = fruit;
         imageChanger.style.backgroundImage = `url(${fruit.image})`;
-        imageChanger.style.backgroundImage = `url(${defaultImage})`;
-
         div.style.backgroundColor = "red";
         Array.from(fruitsContainer.children).forEach((otherDiv) => {
             if (otherDiv !== div) {
