@@ -17,6 +17,7 @@ fruits.forEach((fruit) => {
     let div = document.createElement("div");
     div.classList.add("boutonFruits");
     div.textContent = fruit.name;
+    div.style.height= 100/fruits.length + "vh";
     fruitsContainer.appendChild(div)
 
     div.addEventListener("mouseenter", () => {
@@ -40,8 +41,10 @@ fruits.forEach((fruit) => {
             if (otherDiv !== div) {
                 otherDiv.style.backgroundColor = "";
             }
+
         });
     });
+    
 });
 
 
